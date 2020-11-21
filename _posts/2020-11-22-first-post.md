@@ -3,7 +3,7 @@ layout: post
 title:  "Quiz (2)를 대신하는 수행 과제"
 date:   2020-11-22 12:37:13
 categories: update
-permalink: /post1
+permalink: /post/quiz_2
 ---
 <!--more-->
 
