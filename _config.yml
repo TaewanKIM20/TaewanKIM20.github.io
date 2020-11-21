@@ -30,7 +30,7 @@ header:
     Category: /category/
     Donate: https://laobubu.net/donate.html
 
-permalink: /post/:title
+permalink: /:title
 plugins:
  - jekyll-paginate
  - jekyll-gist
