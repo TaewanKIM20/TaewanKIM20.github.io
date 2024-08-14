@@ -35,3 +35,43 @@
     margin-top: 2em;
   }
 }
+
+.about__desc ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.about__desc li {
+  margin-bottom: 10px;
+}
+
+.coding-list {
+  list-style-type: none; /* 불릿을 제거합니다 */
+  padding: 20px; /* 패딩 설정 */
+  border-radius: 8px; /* 모서리를 둥글게 처리 */
+  margin: 10px 0; /* 상하 여백 설정 */
+  max-width: 1100px;
+  padding-left: 20px;
+}
+
+.coding-list li {
+  background-color: #282c34; /* 어두운 배경색 설정 */
+  color: #abb2bf; /* 밝은 글자색 설정 */
+  font-family: 'Courier New', Courier, monospace;
+  border-left: 3px solid #56b6c2; /* 왼쪽에 강조선 추가 */
+  padding-left: 10px; /* 텍스트 왼쪽 패딩 설정 */
+  margin-bottom: 10px; /* 항목 사이의 간격 */
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.coding-list li:last-child {
+  margin-bottom: 0; /* 마지막 항목의 하단 여백 제거 */
+  border-bottom: none;
+}
+
+.coding-list li:hover {
+  background-color: #3a3f4b; /* 호버 시 배경색 변경 */
+  border-left-color: #61afef; /* 호버 시 테두리 색상 변경 */
+}

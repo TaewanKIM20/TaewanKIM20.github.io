@@ -8,13 +8,12 @@ const about = {
   // all the properties are optional - can be left empty or deleted
   name: 'Taewan Kim',
   role: 'Back End Engineer',
-  description: `
-  I am Taewan Kim, a budding back-end developer who enrolled at Sungkyunkwan University in 2019 with a focus on back-end development. Here are some highlights of my journey so far:\n
-  - Currently involved as a member in two startups, excluding various side projects.\n
-  - Primarily working with Node.js as part of my ongoing study of back-end development stacks.\n
-  - Spent a month in Thailand in 2023 on an ICT volunteering project.\n
-  - Actively participating in Voluntain, where I help operate an online educational platform for coding as part of international volunteer service.\n
-`,
+  description1: 'I am Taewan Kim, a budding back-end developer who enrolled at Sungkyunkwan University in 2019 with a focus on back-end development. Here are some highlights of my journey so far:',
+  description2: 'Student at Sungkyunkwan University, Software Department.',
+  description3: 'ICT volunteer in Thailand with World Friends.',
+  description4: 'Developer for Meeting Go, focusing on API development and AWS deployment.',
+  description5: 'Founder and lead developer of Splash, managing API design and AWS deployment.',
+  description6: 'Developer at Voluntain, responsible for API design, refactoring, and AWS deployment.',
   resume: 'https://example.com',
   social: {
     linkedin: 'https://www.linkedin.com/in/taewan-kim-29539a297/',
