@@ -8,8 +8,13 @@ const about = {
   // all the properties are optional - can be left empty or deleted
   name: 'Taewan Kim',
   role: 'Back End Engineer',
-  description:
-    'Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.',
+  description: `
+  I am Taewan Kim, a budding back-end developer who enrolled at Sungkyunkwan University in 2019 with a focus on back-end development. Here are some highlights of my journey so far:
+  - Currently involved as a member in two startups, excluding various side projects.
+  - Primarily working with Node.js as part of my ongoing study of back-end development stacks.
+  - Spent a month in Thailand in 2023 on an ICT volunteering project.
+  - Actively participating in Voluntain, where I help operate an online educational platform for coding as part of international volunteer service.
+`,
   resume: 'https://example.com',
   social: {
     linkedin: 'https://www.linkedin.com/in/taewan-kim-29539a297/',
@@ -22,8 +27,11 @@ const projects = [
   // if there are no projects, Projects section won't show up
   {
     name: 'Meeting Go',
-    description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+    description: `
+  'Meeting Go' is a social discovery app for Korean college students. As a lead back-end developer, I focused on:
+  - Developing APIs and real-time chats using MySQL and Socket.IO.
+  - Ensuring application integrity through code reviews and testing.
+`,
     stack: ['Node.js', 'Mysql', 'Flutter'],
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
@@ -31,15 +39,21 @@ const projects = [
   {
     name: 'Splash',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+      `'Splash' is a marine leisure sports booking platform. As the founder and lead back-end developer, I was responsible for:
+  - Designing and deploying all back-end APIs.`,
     stack: ['Node.js', 'Mysql', 'React'],
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
   },
   {
     name: 'Voluntain',
-    description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+    description: `
+  'Voluntain' is an educational video platform for international students. I have enhanced and currently manage the project by:
+  - Refactoring the existing codebase.
+  - Adding user APIs.
+  - Redesigning and deploying updates.
+`
+,
     stack: ['Strapi', 'Next.js', 'React'],
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
