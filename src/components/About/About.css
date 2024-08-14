@@ -55,15 +55,18 @@
 }
 
 .coding-list li {
-  background-color: #282c34; /* 어두운 배경색 설정 */
-  color: #abb2bf; /* 밝은 글자색 설정 */
+  background-color: var(--clr-bg-alt); /* 어두운 배경색 설정 */
+  color: var(--clr-ft); /* 밝은 글자색 설정 */
   font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+  font-weight: bold;
   border-left: 3px solid #56b6c2; /* 왼쪽에 강조선 추가 */
   padding-left: 10px; /* 텍스트 왼쪽 패딩 설정 */
   margin-bottom: 10px; /* 항목 사이의 간격 */
   transition: all 0.3s ease-in-out;
   margin-bottom: 10px;
-  padding: 10px;
+  padding: 8px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
 
 .coding-list li:last-child {
@@ -72,6 +75,6 @@
 }
 
 .coding-list li:hover {
-  background-color: #3a3f4b; /* 호버 시 배경색 변경 */
+  background-color: var(--clr-hb); /* 호버 시 배경색 변경 */
   border-left-color: #61afef; /* 호버 시 테두리 색상 변경 */
 }
