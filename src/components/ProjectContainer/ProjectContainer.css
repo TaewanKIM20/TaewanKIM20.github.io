@@ -26,8 +26,16 @@
   font-weight: 500;
   font-size: 0.8rem;
   color: var(--clr-fg-alt);
+  padding: 5px;
 }
 
 .project .link--icon {
   margin-left: 0.5em;
+}
+
+.project-list {
+  list-style-type: square;
+  text-align: left;
+  margin-bottom: 5px;
+  padding: 10px;
 }

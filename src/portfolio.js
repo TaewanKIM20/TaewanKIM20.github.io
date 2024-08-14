@@ -26,33 +26,31 @@ const projects = [
   // if there are no projects, Projects section won't show up
   {
     name: 'Meeting Go',
-    description: `
-  'Meeting Go' is a social discovery app for Korean college students. As a lead back-end developer, I focused on:\n
-  - Developing and deploying APIs and real-time chats using MySQL and Socket.IO.\n
-  - Ensuring application integrity through code reviews and testing.\n
-`,
+    description1: `'Meeting Go' is a social discovery app for Korean college students. As a lead back-end developer, I focused on:`,
+    description2: 'API and Database Development (using Mysql)',
+    description3: 'Real-time Chat Feature Development (using Socket.io)',
+    description4: 'Deployment on AWS EC2',
+    description5: 'Ensured application integrity through rigorous code reviews and comprehensive testing.',
     stack: ['Node.js', 'Mysql', 'Flutter'],
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
   },
   {
     name: 'Splash',
-    description:
-      `'Splash' is a marine leisure sports booking platform. As the founder and lead back-end developer, I was responsible for:\n
-  - Designing and deploying all back-end APIs.\n`,
+    description1: `'Splash' is a marine leisure sports booking platform. As the founder and lead back-end developer, I was responsible for:`,
+    description2: 'all APIs and Database Development (using Mysql)',
+    description3: 'Deployment on AWS EC2 with Load Balancers',
+    description4: 'Participation in Social Marketing',
     stack: ['Node.js', 'Mysql', 'React'],
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
   },
   {
     name: 'Voluntain',
-    description: `
-  'Voluntain' is an educational video platform for international students. I have enhanced and currently manage the project by:\n
-  - Refactoring the existing codebase.\n
-  - Adding user APIs.\n
-  - Redesigning and deploying updates.\n
-`
-,
+    description1: `'Voluntain' is an educational video platform for international students. I have enhanced and currently manage the project by:`,
+    description2: 'Refactoring the existing codebase.',
+    description3: 'Adding user APIs.',
+    description4: 'Redesigning and deploying updates.',
     stack: ['Strapi', 'Next.js', 'React'],
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',

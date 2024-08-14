@@ -91,6 +91,16 @@ main {
   transition: transform 0.2s ease-in-out;
 }
 
+.sbtn {
+  display: block;
+  cursor: pointer;
+  padding: 0.2em 1em;
+  font-weight: 200;
+  font-size: 0.8rem;
+  text-transform: lowercase;
+  transition: transform 0.2s ease-in-out;
+}
+
 .btn--outline {
   color: var(--clr-primary);
   border: 2px solid var(--clr-primary);

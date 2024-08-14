@@ -7,11 +7,19 @@ const ProjectContainer = ({ project }) => (
   <div className='project'>
     <h3>{project.name}</h3>
 
-    <p className='project__description'>{project.description}</p>
+    <p className='project__description'>{project.description1}</p>
+    <p className='project__description'>
+      <ul className="project-list">
+        {project.description2 && <li>{project.description2}</li>}
+        {project.description3 && <li>{project.description3}</li>}
+        {project.description4 && <li>{project.description4}</li>}
+        {project.description5 && <li>{project.description5}</li>}
+      </ul>
+    </p>
     {project.stack && (
       <ul className='project__stack'>
         {project.stack.map((item) => (
-          <li key={uniqid()} className='project__stack-item'>
+          <li key={uniqid()} className='project__stack-item sbtn btn--plain'>
             {item}
           </li>
         ))}
