@@ -1,35 +1,34 @@
-import GitHubIcon from '@material-ui/icons/GitHub'
-import LinkedInIcon from '@material-ui/icons/LinkedIn'
-import { about } from '../../portfolio'
-import './About.css'
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import { about } from '../../portfolio';
+import './About.css';
 
 const About = () => {
-  const { name, role, description1, description2, description3, description4, description5, description6, resume, social } = about
+  const { name, role, description1, description2, description3, description4, description5, description6, resume, social } = about;
 
   return (
     <div className='about center'>
-      {name && (
-        <h1>
-          Hi, I am <span className='about__name'>{name}.</span>
-        </h1>
-      )}
+      <div className="about__container">
+        <div className="about__left">
+          {name && (
+            <h2>
+              I am <span className='about__name'>{name}</span>
+            </h2>
+          )}
+          {role && <h3 className='about__role'>A {role}</h3>}
+          <p className='about__desc'>{description1}</p>
+        </div>
 
-      {role && <h2 className='about__role'>A {role}.</h2>}
-      <p className='about__desc'>{description1 && description1}</p>
-      <p>
-        <ul className="coding-list">
-          March, 2019
-          {description2 && <li>{description2}</li>}
-          July, 2023
-          {description3 && <li>{description3}</li>}
-          September, 2023
-          {description4 && <li>{description4}</li>}
-          May, 2024
-          {description5 && <li>{description5}</li>}
-          June, 2024
-          {description6 && <li>{description6}</li>}
-        </ul>
-      </p>
+        <div className="about__right">
+          <ul className="coding-list">
+            March, 2019 {description2 && <li>{description2}</li>}
+            July, 2023 {description3 && <li>{description3}</li>}
+            September, 2023 {description4 && <li>{description4}</li>}
+            May, 2024 {description5 && <li>{description5}</li>}
+            June, 2024 {description6 && <li>{description6}</li>}
+          </ul>
+        </div>
+      </div>
 
       <div className='about__contact center'>
         {resume && (
@@ -43,21 +42,12 @@ const About = () => {
         {social && (
           <>
             {social.github && (
-              <a
-                href={social.github}
-                aria-label='github'
-                className='link link--icon'
-              >
+              <a href={social.github} aria-label='github' className='link link--icon'>
                 <GitHubIcon />
               </a>
             )}
-
             {social.linkedin && (
-              <a
-                href={social.linkedin}
-                aria-label='linkedin'
-                className='link link--icon'
-              >
+              <a href={social.linkedin} aria-label='linkedin' className='link link--icon'>
                 <LinkedInIcon />
               </a>
             )}
@@ -65,7 +55,7 @@ const About = () => {
         )}
       </div>
     </div>
-  )
+  );
 }
 
-export default About
+export default About;

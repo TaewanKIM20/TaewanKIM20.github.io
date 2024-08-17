@@ -7,9 +7,9 @@ const header = {
 const about = {
   // all the properties are optional - can be left empty or deleted
   name: 'Taewan Kim',
-  role: 'Back End Engineer',
-  description1: 'I am Taewan Kim, a budding back-end developer who enrolled at Sungkyunkwan University in 2019 with a focus on back-end development. Here are some highlights of my journey so far:',
-  description2: 'Student at Sungkyunkwan University, Software Department.',
+  role: 'Back-end Engineer',
+  description1: 'I am Taewan Kim, a back-end developer studying at Sungkyunkwan University’s Department of Computer Science and Engineering. Since enrolling in 2019, I have gained hands-on experience in server setup, deployment, and traffic management for various web and mobile projects. My academic and project involvement has honed my skills, preparing me to excel in dynamic development settings.',
+  description2: 'Student at Sungkyunkwan University, Department of Computer Science and Engineering',
   description3: 'ICT volunteer in Thailand with World Friends.',
   description4: 'Developer for Meeting Go, focusing on API development and AWS deployment.',
   description5: 'Founder and lead developer of Splash, managing API design and AWS deployment.',
