@@ -14,7 +14,7 @@ const about = {
   description4: 'Developer for Meeting Go, focusing on API development and AWS deployment.',
   description5: 'Founder and lead developer of Splash, managing API design and AWS deployment.',
   description6: 'Developer at Voluntain, responsible for API design, refactoring, and AWS deployment.',
-  resume: 'https://drive.google.com/file/d/1CGB8eJmA0W9CWXiG4roud7Zmq3bYfJZY/view?usp=drive_link',
+  resume: 'https://acrobat.adobe.com/id/urn:aaid:sc:AP:3a31aabe-4778-4fec-9459-489894b285c8',
   social: {
     linkedin: 'https://www.linkedin.com/in/taewan-kim-29539a297/',
     github: 'https://github.com/TaewanKIM20',
