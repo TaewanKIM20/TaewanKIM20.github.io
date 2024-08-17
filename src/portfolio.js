@@ -32,8 +32,8 @@ const projects = [
     description4: 'Deployment on AWS EC2',
     description5: 'Ensured application integrity through rigorous code reviews and comprehensive testing.',
     stack: ['Node.js', 'Mysql', 'Flutter'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+    sourceCode: 'https://github.com/bannangco',
+    livePreview: 'https://meetinggo.kr/',
   },
   {
     name: 'Splash',
@@ -42,8 +42,8 @@ const projects = [
     description3: 'Deployment on AWS EC2 with Load Balancers',
     description4: 'Participation in Social Marketing',
     stack: ['Node.js', 'Mysql', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+    sourceCode: 'https://github.com/bannangco',
+    livePreview: 'https://www.splashreservation.com/',
   },
   {
     name: 'Voluntain',
@@ -52,8 +52,8 @@ const projects = [
     description3: 'Adding user APIs.',
     description4: 'Redesigning and deploying updates.',
     stack: ['Strapi', 'Next.js', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+    sourceCode: 'https://github.com/Voluntain-SKKU/Voluntain-v4',
+    livePreview: 'https://github.com/Voluntain-SKKU/Voluntain-v4',
   },
 ]
 
