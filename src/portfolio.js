@@ -69,7 +69,7 @@ const skills = [
   'SQLite',
   'JavaScript',
   'Next.js',
-  'React',
+  'React.js',
   'Kotlin',
   'Git',
   'CI/CD',
