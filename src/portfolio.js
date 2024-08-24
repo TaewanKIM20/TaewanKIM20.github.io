@@ -1,7 +1,7 @@
 const header = {
   // all the properties are optional - can be left empty or deleted
   homepage: 'https://TaewanKIM20.github.io',
-  title: 'JS.',
+  title: 'Portfolio',
 }
 
 const about = {
