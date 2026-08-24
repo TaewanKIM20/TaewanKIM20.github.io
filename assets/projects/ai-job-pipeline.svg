@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title">
+  <title id="title">AI Job Pipeline observability platform cover</title>
+  <rect width="1600" height="900" fill="#101722"/>
+  <g fill="none" stroke="#2c3e54" stroke-width="2"><path d="M0 150h1600M0 300h1600M0 450h1600M0 600h1600M0 750h1600"/><path d="M200 0v900M400 0v900M600 0v900M800 0v900M1000 0v900M1200 0v900M1400 0v900"/></g>
+  <g stroke="#6f97ff" stroke-width="9" fill="none" stroke-linecap="round"><path d="M260 460h170M590 460h170M920 460h170M1250 460h100"/><path d="M430 460l-25-18m25 18-25 18M760 460l-25-18m25 18-25 18M1090 460l-25-18m25 18-25 18"/></g>
+  <g fill="#18283d" stroke="#7ba0ff" stroke-width="4"><rect x="120" y="345" width="140" height="230" rx="22"/><rect x="450" y="345" width="140" height="230" rx="22"/><rect x="780" y="345" width="140" height="230" rx="22"/><rect x="1110" y="345" width="140" height="230" rx="22"/><circle cx="1370" cy="460" r="88"/></g>
+  <g fill="#dbe5ff" font-family="Arial, sans-serif" font-size="24" text-anchor="middle"><text x="190" y="470">API</text><text x="520" y="470">QUEUE</text><text x="850" y="470">WORKER</text><text x="1180" y="470">LOGS</text><text x="1370" y="470">TRACE</text></g>
+  <text x="800" y="180" fill="#f4f7ff" font-family="Arial, sans-serif" font-size="74" font-weight="800" text-anchor="middle">AI JOB PIPELINE</text>
+  <text x="800" y="235" fill="#7ba0ff" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" letter-spacing="5">DISTRIBUTED SYSTEMS · OBSERVABILITY</text>
+</svg>

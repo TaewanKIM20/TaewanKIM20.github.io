@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title">
+  <title id="title">MeetingGo platform cover</title>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff1f5"/><stop offset="1" stop-color="#eadfff"/></linearGradient></defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="180" y="120" width="1240" height="660" rx="42" fill="#fff" opacity=".82"/>
+  <circle cx="510" cy="415" r="120" fill="#ff6f91" opacity=".22"/>
+  <circle cx="1090" cy="415" r="120" fill="#9f72ff" opacity=".22"/>
+  <path d="M615 415h370" stroke="#5b4b73" stroke-width="16" stroke-linecap="round" stroke-dasharray="22 34"/>
+  <circle cx="800" cy="415" r="46" fill="#ff527c"/>
+  <path d="M800 445s-62-39-62-79c0-45 55-61 81-25 26-36 81-20 81 25 0 40-62 79-62 79z" fill="#fff" transform="translate(-19 -21) scale(.48) translate(838 366)"/>
+  <text x="800" y="635" fill="#241b32" font-family="Arial, sans-serif" font-size="84" font-weight="800" text-anchor="middle">MeetingGo</text>
+  <text x="800" y="690" fill="#786c88" font-family="Arial, sans-serif" font-size="26" text-anchor="middle" letter-spacing="4">TEAM MATCHING · CHAT · NOTIFICATION</text>
+</svg>

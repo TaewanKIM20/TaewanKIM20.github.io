@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title">
+  <title id="title">Splash booking platform cover</title>
+  <defs><linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#dff8ff"/><stop offset="1" stop-color="#3aaee8"/></linearGradient></defs>
+  <rect width="1600" height="900" fill="url(#sea)"/>
+  <path d="M0 570c210-130 350 100 560 0s360 90 560-5 310-10 480 45v290H0z" fill="#007dc3" opacity=".72"/>
+  <path d="M0 660c230-100 385 95 610 0s360 70 540-10 300-25 450 40v210H0z" fill="#005eaa" opacity=".78"/>
+  <rect x="190" y="145" width="560" height="335" rx="28" fill="#fff" opacity=".9"/>
+  <rect x="235" y="205" width="250" height="22" rx="11" fill="#b9dce9"/>
+  <rect x="235" y="256" width="440" height="72" rx="12" fill="#e8f6fa"/>
+  <rect x="235" y="350" width="205" height="74" rx="12" fill="#087ac0"/>
+  <text x="1220" y="310" fill="#fff" font-family="Arial, sans-serif" font-size="108" font-weight="800" text-anchor="middle">SPLASH</text>
+  <text x="1220" y="368" fill="#e8f8ff" font-family="Arial, sans-serif" font-size="27" text-anchor="middle" letter-spacing="5">BOOK · PAY · ENJOY</text>
+</svg>

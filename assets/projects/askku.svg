@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title">
+  <title id="title">ASKku personalized RAG platform cover</title>
+  <rect width="1600" height="900" fill="#eef4ff"/>
+  <rect x="140" y="90" width="1320" height="720" rx="38" fill="#fff"/>
+  <rect x="140" y="90" width="320" height="720" rx="38" fill="#143a78"/>
+  <circle cx="300" cy="230" r="62" fill="#6e99e8"/>
+  <rect x="220" y="340" width="160" height="18" rx="9" fill="#b9cdf2" opacity=".8"/>
+  <rect x="220" y="392" width="120" height="18" rx="9" fill="#b9cdf2" opacity=".56"/>
+  <rect x="220" y="444" width="146" height="18" rx="9" fill="#b9cdf2" opacity=".56"/>
+  <rect x="540" y="180" width="580" height="120" rx="24" fill="#edf3ff"/>
+  <rect x="760" y="350" width="590" height="190" rx="24" fill="#285cc4"/>
+  <rect x="540" y="590" width="810" height="84" rx="22" fill="#f0f2f6"/>
+  <circle cx="1296" cy="632" r="25" fill="#285cc4"/>
+  <text x="830" y="255" fill="#143a78" font-family="Arial, sans-serif" font-size="58" font-weight="800" text-anchor="middle">ASKku</text>
+  <text x="1055" y="430" fill="#fff" font-family="Arial, sans-serif" font-size="28" font-weight="700" text-anchor="middle">Personalized campus answers</text>
+  <text x="1055" y="477" fill="#cfe0ff" font-family="Arial, sans-serif" font-size="21" text-anchor="middle">Calendar · Classes · Notices · RAG</text>
+</svg>
