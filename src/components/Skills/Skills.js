@@ -1,22 +1,32 @@
-import uniqid from 'uniqid'
-import { skills } from '../../portfolio'
+import { skillGroups } from '../../portfolio'
 import './Skills.css'
 
-const Skills = () => {
-  if (!skills.length) return null
-
-  return (
-    <section className='section skills' id='skills'>
-      <h2 className='section__title'>Skills</h2>
-      <ul className='skills__list'>
-        {skills.map((skill) => (
-          <li key={uniqid()} className='skills__list-item btn btn--plain'>
-            {skill}
-          </li>
-        ))}
-      </ul>
-    </section>
-  )
-}
+const Skills = () => (
+  <section className='skills section-shell' id='skills' aria-labelledby='skills-title'>
+    <div className='section-heading section-heading--split'>
+      <div>
+        <p className='section-index'>03 / CAPABILITIES</p>
+        <h2 id='skills-title'>기술과 역량</h2>
+      </div>
+      <p>프로젝트에서 실제로 설계·구현·운영한 기술을 역할별로 정리했습니다.</p>
+    </div>
+    <div className='skills__grid'>
+      {skillGroups.map((group) => (
+        <article className='skill-group' key={group.title}>
+          <div className='skill-group__header'>
+            <span>{group.number}</span>
+            <h3>{group.title}</h3>
+          </div>
+          <p>{group.description}</p>
+          <ul>
+            {group.items.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </article>
+      ))}
+    </div>
+  </section>
+)
 
 export default Skills

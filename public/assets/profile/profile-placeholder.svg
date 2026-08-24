@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Profile photo placeholder</title>
+  <desc id="desc">Replace this placeholder by adding profile.jpg to the same folder.</desc>
+  <rect width="800" height="1000" fill="#edf2ff"/>
+  <circle cx="400" cy="355" r="140" fill="#c7d4f8"/>
+  <path d="M155 880c25-206 122-318 245-318s220 112 245 318" fill="#c7d4f8"/>
+  <rect x="210" y="78" width="380" height="54" rx="27" fill="#fff"/>
+  <text x="400" y="113" fill="#2357d9" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle" letter-spacing="3">ADD PROFILE.JPG</text>
+</svg>

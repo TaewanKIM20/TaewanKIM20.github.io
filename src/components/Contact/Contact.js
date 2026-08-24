@@ -1,19 +1,18 @@
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward'
 import { contact } from '../../portfolio'
 import './Contact.css'
 
-const Contact = () => {
-  if (!contact.email) return null
-
-  return (
-    <section className='section contact center' id='contact'>
-      <h2 className='section__title'>Contact</h2>
-      <a href={`mailto:${contact.email}`}>
-        <span type='button' className='btn btn--outline'>
-          Email
-        </span>
+const Contact = () => (
+  <section className='contact section-shell' id='contact' aria-labelledby='contact-title'>
+    <p className='section-index'>04 / CONTACT</p>
+    <div className='contact__content'>
+      <h2 id='contact-title'>Contact</h2>
+      <a href={`mailto:${contact.email}`} className='contact__mail'>
+        <span>{contact.email}</span>
+        <ArrowForwardIcon />
       </a>
-    </section>
-  )
-}
+    </div>
+  </section>
+)
 
 export default Contact

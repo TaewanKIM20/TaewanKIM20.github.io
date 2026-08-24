@@ -6,16 +6,10 @@ const Header = () => {
   const { homepage, title } = header
 
   return (
-    <header className='header center'>
-      <h3>
-        {homepage ? (
-          <a href={homepage} className='link'>
-            {title}
-          </a>
-        ) : (
-          title
-        )}
-      </h3>
+    <header className='header'>
+      <a href={homepage} className='brand' aria-label='김태완 포트폴리오 홈'>
+        {title}
+      </a>
       <Navbar />
     </header>
   )

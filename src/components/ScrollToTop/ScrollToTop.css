@@ -1,11 +1,27 @@
 .scroll-top {
   position: fixed;
-  bottom: 2em;
-  right: 4em;
-  background-color: transparent;
+  right: 24px;
+  bottom: 24px;
+  z-index: 8;
 }
 
-@media (max-width: 900px) {
+.scroll-top a {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  color: #fff;
+  background: #171717;
+  border-radius: 50%;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.16);
+}
+
+.dark .scroll-top a {
+  color: #121313;
+  background: #eeeee9;
+}
+
+@media (max-width: 760px) {
   .scroll-top {
     display: none;
   }

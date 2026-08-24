@@ -1,51 +1,25 @@
-import uniqid from 'uniqid'
-import GitHubIcon from '@material-ui/icons/GitHub'
-import LaunchIcon from '@material-ui/icons/Launch'
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward'
 import './ProjectContainer.css'
 
-const ProjectContainer = ({ project }) => (
-  <div className='project'>
-    <h3>{project.name}</h3>
-
-    <p className='project__description'>{project.description1}</p>
-    <p className='project__description'>
-      <ul className="project-list">
-        {project.description2 && <li>{project.description2}</li>}
-        {project.description3 && <li>{project.description3}</li>}
-        {project.description4 && <li>{project.description4}</li>}
-        {project.description5 && <li>{project.description5}</li>}
-      </ul>
-    </p>
-    {project.stack && (
-      <ul className='project__stack'>
-        {project.stack.map((item) => (
-          <li key={uniqid()} className='project__stack-item sbtn btn--plain'>
-            {item}
-          </li>
-        ))}
-      </ul>
-    )}
-
-    {project.sourceCode && (
-      <a
-        href={project.sourceCode}
-        aria-label='source code'
-        className='link link--icon'
-      >
-        <GitHubIcon />
-      </a>
-    )}
-
-    {project.livePreview && (
-      <a
-        href={project.livePreview}
-        aria-label='live preview'
-        className='link link--icon'
-      >
-        <LaunchIcon />
-      </a>
-    )}
-  </div>
+const ProjectContainer = ({ project, index, onSelect }) => (
+  <article className={`project-card project-card--${project.statusTone}`}>
+    <button type='button' onClick={onSelect} aria-label={`${project.name} 상세 보기`}>
+      <span className='project-card__top'>
+        <span className='project-card__number'>0{index + 1}</span>
+        <span className='project-card__state'>{project.state}</span>
+      </span>
+      <span className='project-card__category'>{project.category} · {project.year}</span>
+      <strong>{project.name}</strong>
+      <span className='project-card__description'>{project.description}</span>
+      <span className='project-card__stack'>
+        {project.stack.slice(0, 4).map((item) => <span key={item}>{item}</span>)}
+      </span>
+      <span className='project-card__proof'>{project.results[0]}</span>
+      <span className='project-card__action'>
+        자세히 보기 <ArrowForwardIcon fontSize='small' />
+      </span>
+    </button>
+  </article>
 )
 
 export default ProjectContainer

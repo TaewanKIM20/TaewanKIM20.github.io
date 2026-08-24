@@ -4,7 +4,6 @@ import WbSunnyRoundedIcon from '@material-ui/icons/WbSunnyRounded'
 import MenuIcon from '@material-ui/icons/Menu'
 import CloseIcon from '@material-ui/icons/Close'
 import { ThemeContext } from '../../contexts/theme'
-import { projects, skills, contact } from '../../portfolio'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -12,6 +11,7 @@ const Navbar = () => {
   const [showNavList, setShowNavList] = useState(false)
 
   const toggleNavList = () => setShowNavList(!showNavList)
+  const closeNavList = () => setShowNavList(false)
 
   return (
     <nav className='center nav'>
@@ -19,48 +19,25 @@ const Navbar = () => {
         style={{ display: showNavList ? 'flex' : null }}
         className='nav__list'
       >
-        {projects.length ? (
-          <li className='nav__list-item'>
-            <a
-              href='#projects'
-              onClick={toggleNavList}
-              className='link link--nav'
-            >
-              Projects
-            </a>
-          </li>
-        ) : null}
-
-        {skills.length ? (
-          <li className='nav__list-item'>
-            <a
-              href='#skills'
-              onClick={toggleNavList}
-              className='link link--nav'
-            >
-              Skills
-            </a>
-          </li>
-        ) : null}
-
-        {contact.email ? (
-          <li className='nav__list-item'>
-            <a
-              href='#contact'
-              onClick={toggleNavList}
-              className='link link--nav'
-            >
-              Contact
-            </a>
-          </li>
-        ) : null}
+        <li className='nav__list-item'>
+          <a href='#about' onClick={closeNavList}>소개</a>
+        </li>
+        <li className='nav__list-item'>
+          <a href='#projects' onClick={closeNavList}>프로젝트</a>
+        </li>
+        <li className='nav__list-item'>
+          <a href='#skills' onClick={closeNavList}>역량</a>
+        </li>
+        <li className='nav__list-item'>
+          <a href='#contact' onClick={closeNavList}>연락</a>
+        </li>
       </ul>
 
       <button
         type='button'
         onClick={toggleTheme}
         className='btn btn--icon nav__theme'
-        aria-label='toggle theme'
+        aria-label={themeName === 'dark' ? '라이트 모드로 전환' : '다크 모드로 전환'}
       >
         {themeName === 'dark' ? <WbSunnyRoundedIcon /> : <Brightness2Icon />}
       </button>
@@ -69,7 +46,7 @@ const Navbar = () => {
         type='button'
         onClick={toggleNavList}
         className='btn btn--icon nav__hamburger'
-        aria-label='toggle navigation'
+        aria-label={showNavList ? '메뉴 닫기' : '메뉴 열기'}
       >
         {showNavList ? <CloseIcon /> : <MenuIcon />}
       </button>
