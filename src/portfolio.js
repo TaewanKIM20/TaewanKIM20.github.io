@@ -12,7 +12,7 @@ const about = {
   description:
     '백엔드를 중심으로 설계부터 배포와 운영까지 연결하는 엔지니어입니다.',
   detail:
-    '서비스 출시, 창업, 산학협력과 플랫폼 기획 경험을 바탕으로 현재 StarLab AGIT와 Popvia를 개발하고 있습니다.',
+    '서비스 출시와 창업, 교육 현장 경험을 바탕으로 현재 코딩 교육 플랫폼 AGIT를 운영하고 개선하고 있습니다.',
   photo: '/assets/profile/profile.png',
   photoFallback: '/assets/profile/profile-placeholder.svg',
   resume:
@@ -36,7 +36,7 @@ const profileHighlights = {
 
 const projectCatalog = [
   {
-    name: 'StarLab Code (AGIT)',
+    name: 'AGIT',
     image: '/assets/projects/agit-teacher-home.png',
     imageAlt: 'AGIT 선생님용 반 현황 대시보드 화면',
     category: 'Learning Platform',
@@ -132,8 +132,8 @@ const projectCatalog = [
   },
   {
     name: 'MeetingGo',
-    image: '/assets/projects/meetinggo.svg',
-    imageAlt: 'MeetingGo 플랫폼 커버 이미지',
+    image: '/assets/projects/meetinggo-banner.png',
+    imageAlt: 'MeetingGo 앱에서 사용한 실제 서비스 배너',
     category: 'Production Backend',
     year: '2023—24',
     state: '서비스 종료 · 운영 완료',
@@ -145,14 +145,14 @@ const projectCatalog = [
     facts: [
       { label: 'PERIOD', value: '2023.12—2024.09' },
       { label: 'TEAM', value: '4인 · 백엔드 전 영역' },
-      { label: 'CONTRIBUTION', value: '94 commits' },
+      { label: 'CONTRIBUTION', value: '115 commits · 저장소 1위' },
       { label: 'RELEASE', value: 'iOS · Android v1.0.6' },
     ],
     description:
       '대학생 팀 단위 매칭 모바일 서비스. 유저·팀·매칭·채팅·관리자 도메인의 API와 AWS 운영을 맡았습니다.',
     decision:
       'REST 상태 변경과 Socket.io 실시간 채팅을 결합하고, 접속 상태를 인지하는 FCM 알림 흐름을 설계했습니다.',
-    results: ['iOS · Android 정식 출시', '94 commits', 'UUID · 토큰 회전 · 감사 로그'],
+    results: ['iOS · Android 정식 출시', '115 commits · 저장소 최다 기여', 'UUID · 토큰 회전 · 감사 로그'],
     details: [
       {
         title: '제품 흐름 · 신뢰할 수 있는 대학생 팀 매칭',
@@ -180,8 +180,8 @@ const projectCatalog = [
   },
   {
     name: 'Splash',
-    image: '/assets/projects/splash.svg',
-    imageAlt: 'Splash 예약 결제 플랫폼 커버 이미지',
+    image: '/assets/projects/splash-screen.png',
+    imageAlt: 'Splash 수상레저 상품 예약 서비스의 실제 상품 목록 화면',
     category: 'Payment & Booking',
     year: '2024—',
     state: '운영 중',
@@ -192,7 +192,7 @@ const projectCatalog = [
     journey: ['상품 선택', 'PG 원장 검증', '예약 확정', '센터 알림'],
     facts: [
       { label: 'OWNERSHIP', value: '백엔드 0→1 구축' },
-      { label: 'CONTRIBUTION', value: '45 commits · 저장소 1위' },
+      { label: 'CONTRIBUTION', value: '74 / 123 commits · 저장소 1위' },
       { label: 'DOMAIN', value: '인증 · 예약 · 결제 · 관리자' },
       { label: 'OPERATION', value: '실제 예약 발생' },
     ],
@@ -212,7 +212,7 @@ const projectCatalog = [
       },
       {
         title: '백엔드 · 인증부터 결제까지 0→1 구축',
-        text: 'Node.js·Express·Sequelize로 인증, 예약, 결제, 문의, 관리자 API의 초기 골격을 구축했습니다. access/refresh 토큰을 분리하고 refresh 토큰을 사용자당 한 건만 유지해 재로그인 시 회전시켰습니다. 저장소 45개 커밋의 단일 최다 기여자로 결제와 운영 백엔드를 연결했습니다.',
+        text: 'Node.js·Express·Sequelize로 인증, 예약, 결제, 문의, 관리자 API의 초기 골격을 구축했습니다. access/refresh 토큰을 분리하고 refresh 토큰을 사용자당 한 건만 유지해 재로그인 시 회전시켰습니다. 저장소 123건 중 74개 커밋을 남긴 단일 최다 기여자로 결제와 운영 백엔드를 연결했습니다.',
       },
       {
         title: '결제 · 클라이언트를 신뢰하지 않는 검증',
@@ -228,8 +228,8 @@ const projectCatalog = [
   },
   {
     name: 'ASKku',
-    image: '/assets/projects/askku.svg',
-    imageAlt: 'ASKku 개인화 RAG 플랫폼 커버 이미지',
+    image: '/assets/projects/askku-home.png',
+    imageAlt: 'ASKku 성균관대 정보 검색 서비스의 실제 홈 화면',
     category: 'Personalized RAG',
     year: '2025',
     state: '구현 완료',
@@ -243,6 +243,13 @@ const projectCatalog = [
       { label: 'CONTRIBUTION', value: '14 commits · 11 merges' },
       { label: 'DATA', value: '학과 · 기숙사 · 대학 공지' },
       { label: 'BRIDGE', value: 'Node ↔ Python · SSE' },
+    ],
+    gallery: [
+      {
+        src: '/assets/projects/askku-chat.png',
+        alt: 'ASKku RAG 챗봇의 실제 채팅 화면',
+        caption: '학교 공지를 검색하고 답하는 RAG 채팅',
+      },
     ],
     description:
       '학교 공지와 학사 정보를 사용자의 시간표·캘린더에 맞춰 답하는 성균관대 학생용 개인화 RAG 챗봇입니다.',
@@ -276,8 +283,8 @@ const projectCatalog = [
   },
   {
     name: 'Voluntain',
-    image: '/assets/projects/voluntain.svg',
-    imageAlt: 'Voluntain 온라인 코딩 교육 플랫폼 커버 이미지',
+    image: '/assets/projects/voluntain-home.png',
+    imageAlt: 'Voluntain 온라인 코딩 교육 플랫폼의 실제 메인 화면',
     category: 'Education Platform',
     year: '2024',
     state: 'v4 구현 완료 · 배포 예정',
@@ -291,6 +298,18 @@ const projectCatalog = [
       { label: 'TEAM', value: '웹개발팀 3인' },
       { label: 'VERSION', value: 'v4 기능 구현 완료' },
       { label: 'DEPLOY', value: 'S3 · 도메인 연결 예정' },
+    ],
+    gallery: [
+      {
+        src: '/assets/projects/voluntain-course.png',
+        alt: 'Voluntain 강좌 소개 화면',
+        caption: 'Scratch·Python 강좌 탐색',
+      },
+      {
+        src: '/assets/projects/voluntain-lecture.png',
+        alt: 'Voluntain 강의 영상 재생 화면',
+        caption: '영상 학습과 진도 이어보기',
+      },
     ],
     description:
       '성균관대 소프트웨어학과 해외봉사 교육을 일회성 활동에서 지속 가능한 온라인 코딩 교육으로 전환한 웹 플랫폼입니다.',
@@ -372,9 +391,9 @@ const projectCatalog = [
       'https://github.com/Project-Hamming/Distributed-Job-Processing-AI-Observability-Platform',
   },
   {
-    name: 'Jeju-Bali',
-    image: '/assets/projects/jeju-bali.png',
-    imageAlt: '제주 원료 기반 화장품을 추천하는 Jeju-Bali 제품 이미지',
+    name: 'Jeju AX',
+    image: '/assets/projects/jeju-ax-product.png',
+    imageAlt: 'Jeju AX 앱에서 추천하는 제주 원료 화장품 예시',
     category: 'AI Skin Analysis',
     year: '2026',
     state: '해커톤 MVP · 배포 구성 완료',
@@ -421,8 +440,8 @@ const projectCatalog = [
   },
   {
     name: 'Iriro',
-    image: '/assets/projects/iriro.png',
-    imageAlt: '교통약자를 위한 Iriro 공항 내비게이션 이미지',
+    image: '/assets/projects/iriro-current-map.png',
+    imageAlt: 'Iriro의 실제 현재 위치 기반 실내 경로 화면',
     category: 'Accessible Navigation',
     year: '2026',
     state: '해커톤 MVP',
@@ -489,11 +508,9 @@ const projectCatalog = [
 // 프로젝트 카드는 최근 경험부터 역순으로 표시합니다.
 // 순서를 바꾸려면 아래 이름 배열만 수정하면 됩니다.
 const projectOrder = [
-  'StarLab Code (AGIT)',
-  'Popvia',
+  'AGIT',
   'Iriro',
-  'Jeju-Bali',
-  'AI Job Pipeline',
+  'Jeju AX',
   'ASKku',
   'Voluntain',
   'Splash',

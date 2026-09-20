@@ -1,132 +1,94 @@
 .app {
-  --bg: #f7f8fa;
-  --surface: #ffffff;
-  --surface-soft: #f0f2f5;
-  --text: #172033;
-  --muted: #657083;
-  --line: #e1e5eb;
-  --primary: #2357d9;
-  --primary-soft: #edf2ff;
-  --header-bg: rgba(247, 248, 250, 0.88);
+  --bg: #fbfbfa;
+  --surface: #f2f3f4;
+  --surface-strong: #e9ebed;
+  --text: #202225;
+  --muted: #686d73;
+  --line: #dedfe1;
+  --primary: #255a9b;
+  --accent: #255a9b;
+  --header-bg: #fbfbfa;
   min-height: 100vh;
   color: var(--text);
   background: var(--bg);
-  font-family: Pretendard, 'Pretendard Variable', 'Noto Sans KR', -apple-system,
-    BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  line-height: 1.6;
-  transition: color 180ms ease, background-color 180ms ease;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple SD Gothic Neo',
+    'Malgun Gothic', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  transition: color 150ms ease, background-color 150ms ease;
 }
 
 .app.dark {
-  --bg: #11151d;
-  --surface: #181e28;
-  --surface-soft: #202735;
-  --text: #f1f4f8;
-  --muted: #9ca7b8;
-  --line: #2c3544;
-  --primary: #7d9cff;
-  --primary-soft: #202c4c;
-  --header-bg: rgba(17, 21, 29, 0.88);
+  --bg: #151617;
+  --surface: #202224;
+  --surface-strong: #2a2d30;
+  --text: #eceeef;
+  --muted: #a1a6ab;
+  --line: #34373a;
+  --primary: #78a7df;
+  --accent: #78a7df;
+  --header-bg: #151617;
 }
 
-main {
-  overflow: hidden;
-}
+main { overflow: hidden; }
 
 .section-shell {
-  width: min(1160px, calc(100% - 48px));
+  width: min(1000px, calc(100% - 48px));
   margin: 0 auto;
-  padding: 88px 0;
-  scroll-margin-top: 76px;
+  padding: 72px 0;
+  scroll-margin-top: 72px;
 }
 
 .section-heading {
+  max-width: 620px;
   margin-bottom: 32px;
-}
-
-.section-heading--split {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 390px);
-  gap: 40px;
-  align-items: end;
 }
 
 .section-heading h2,
 .contact h2 {
-  margin-top: 10px;
-  font-size: clamp(2.25rem, 4.8vw, 4rem);
+  margin-top: 6px;
+  font-size: clamp(1.65rem, 3vw, 2rem);
   font-weight: 700;
-  line-height: 1.08;
-  letter-spacing: -0.055em;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
 }
 
-.section-heading > p {
+.section-heading > p:last-child {
+  margin-top: 10px;
   color: var(--muted);
-  font-size: 0.94rem;
-  line-height: 1.75;
+  font-size: 0.9rem;
+  line-height: 1.7;
 }
 
 .section-index,
 .eyebrow {
-  color: var(--primary);
-  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+  color: var(--accent);
   font-size: 0.7rem;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.06em;
 }
 
 .button {
-  min-height: 46px;
+  min-height: 40px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
-  padding: 0 19px;
-  border-radius: 8px;
-  font-size: 0.86rem;
-  font-weight: 700;
-  transition: transform 160ms ease, box-shadow 160ms ease;
+  gap: 12px;
+  padding: 0 15px;
+  font-size: 0.8rem;
+  font-weight: 650;
+  transition: background-color 150ms ease, color 150ms ease;
 }
 
-.button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 9px 24px rgba(35, 87, 217, 0.2);
-}
+.button--primary { color: #fff; background: var(--primary); }
+.button--primary:hover { background: #19477f; }
+.dark .button--primary { color: #111; }
 
-.button--primary {
-  color: #fff;
-  background: var(--primary);
-}
-
-.dark .button--primary {
-  color: #101624;
-}
-
-@media (max-width: 760px) {
-  .section-shell {
-    width: min(100% - 40px, 1120px);
-    padding: 64px 0;
-  }
-
-  .section-heading--split {
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
-
-  .section-heading {
-    margin-bottom: 32px;
-  }
+@media (max-width: 680px) {
+  .section-shell { width: min(100% - 32px, 1000px); padding: 54px 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  *,
-  *::before,
-  *::after {
-    scroll-behavior: auto !important;
-    transition-duration: 0.01ms !important;
-  }
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
 }

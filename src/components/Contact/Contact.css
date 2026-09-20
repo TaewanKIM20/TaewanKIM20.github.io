@@ -1,16 +1,15 @@
 .contact {
-  width: min(1120px, calc(100% - 64px));
-  padding-top: 104px;
-  padding-bottom: 104px;
-  border-top: 1px solid var(--line);
+  width: min(1000px, calc(100% - 48px));
+  padding-top: 72px;
+  padding-bottom: 72px;
 }
 
 .contact__content {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  gap: 48px;
-  margin-top: 12px;
+  gap: 32px;
+  margin-top: 8px;
 }
 
 .contact h2 {
@@ -18,22 +17,22 @@
 }
 
 .contact__mail {
-  min-width: min(100%, 430px);
+  min-width: min(100%, 360px);
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
   padding: 16px 0;
   color: var(--text);
-  border-bottom: 1px solid var(--text);
-  font-size: clamp(0.95rem, 1.8vw, 1.25rem);
+  box-shadow: inset 0 -1px 0 var(--text);
+  font-size: 0.9rem;
   font-weight: 650;
-  transition: color 150ms ease, border-color 150ms ease;
+  transition: color 150ms ease;
+  overflow-wrap: anywhere;
 }
 
 .contact__mail:hover {
   color: var(--primary);
-  border-color: var(--primary);
 }
 
 .contact__mail svg {
@@ -46,9 +45,9 @@
 
 @media (max-width: 760px) {
   .contact {
-    width: min(100% - 40px, 1120px);
-    padding-top: 78px;
-    padding-bottom: 78px;
+    width: min(100% - 32px, 1000px);
+    padding-top: 54px;
+    padding-bottom: 54px;
   }
 
   .contact__content {

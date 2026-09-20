@@ -1,77 +1,14 @@
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-
-.nav__list {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-}
-
-.nav__list a {
-  color: var(--muted);
-  font-size: 0.84rem;
-  font-weight: 650;
-  transition: color 150ms ease;
-}
-
-.nav__list a:hover,
-.nav__list a:focus-visible {
-  color: var(--text);
-}
-
-.nav__theme,
-.nav__hamburger {
-  display: grid;
-  width: 36px;
-  height: 36px;
-  place-items: center;
-  border: 1px solid var(--line);
-  border-radius: 50%;
-  color: var(--text);
-  background: transparent;
-}
-
-.nav__theme svg,
-.nav__hamburger svg {
-  font-size: 1.05rem;
-}
-
-.nav__hamburger {
-  display: none;
-}
+.nav { display: flex; align-items: center; gap: 16px; }
+.nav__list { display: flex; align-items: center; gap: 22px; }
+.nav__list a { color: var(--muted); font-size: 0.74rem; font-weight: 600; transition: color 150ms ease; }
+.nav__list a:hover, .nav__list a:focus-visible { color: var(--accent); }
+.nav__theme, .nav__hamburger { width: 30px; height: 30px; display: grid; place-items: center; color: var(--text); background: transparent; }
+.nav__theme svg, .nav__hamburger svg { font-size: 1.03rem; }
+.nav__hamburger { display: none; }
 
 @media (max-width: 640px) {
-  .nav {
-    gap: 10px;
-  }
-
-  .nav__list {
-    position: fixed;
-    inset: 64px 0 auto;
-    z-index: 9;
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0;
-    padding: 22px 20px 28px;
-    border-bottom: 1px solid var(--line);
-    background: var(--bg);
-  }
-
-  .nav__list-item {
-    width: 100%;
-  }
-
-  .nav__list a {
-    display: block;
-    padding: 12px 0;
-    font-size: 1rem;
-  }
-
-  .nav__hamburger {
-    display: grid;
-  }
+  .nav { gap: 8px; }
+  .nav__list { position: fixed; inset: 56px 0 auto; display: none; flex-direction: column; align-items: stretch; gap: 0; padding: 16px; background: var(--bg); box-shadow: 0 10px 20px rgba(0,0,0,.1); }
+  .nav__list a { display: block; padding: 12px 0; font-size: 0.95rem; text-align: center; }
+  .nav__hamburger { display: grid; }
 }

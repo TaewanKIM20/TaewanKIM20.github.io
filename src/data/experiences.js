@@ -27,8 +27,8 @@ const experiences = [
   {
     period: '2024.06 —',
     organization: 'Voluntain',
-    role: 'Industry–Academic Cooperation Developer',
-    description: '산학협력 프로젝트에서 기존 코드베이스를 리팩터링하고 사용자 API와 배포 구조를 개선했습니다.',
+    role: 'Full-stack Developer',
+    description: '성균관대 온라인 해외봉사 플랫폼에서 자체 인증과 강의별 Q&A를 구현해 외부 게시판 의존을 제거했습니다.',
   },
   {
     period: '3 MONTHS',
@@ -49,14 +49,8 @@ const experiences = [
     description: '학업과 서비스 개발 경험을 연결하며 성균관대학교 학부 과정을 마쳤습니다.',
   },
   {
-    period: '2026.04 — 2026.06',
-    organization: 'AI Job Pipeline',
-    role: 'Architecture · Observability',
-    description: '분산 작업 처리 플랫폼의 네트워크 경계, 상태 머신과 Trace ID 기반 관측성 파이프라인을 설계했습니다.',
-  },
-  {
     period: '2026.07',
-    organization: 'Jeju-Bali',
+    organization: 'Jeju AX',
     role: 'AI Product · Backend Developer',
     description: '자체 학습 피부 분석 모델과 날씨·제주 원료 RAG를 연결한 AI 화장품 추천 MVP를 완성했습니다.',
   },
@@ -69,16 +63,8 @@ const experiences = [
   {
     period: '2026.07 — NOW',
     organization: 'StarLab · AGIT',
-    role: 'Platform Developer',
+    role: 'Project Lead · Platform Developer',
     description: '코딩 교육 플랫폼의 채점 시스템, 브라우저 샌드박스, 데이터 마이그레이션과 배포를 개발하고 있습니다.',
-    relation: 'Jeju-Bali와 같은 시점에 시작',
-  },
-  {
-    period: '2026.07 — NOW',
-    organization: 'Popvia',
-    role: 'Full-stack Developer',
-    description: '관광·팝업 동선 최적화 앱의 React Native 클라이언트와 경로 계산 백엔드를 개발하고 있습니다.',
-    relation: 'AGIT와 같은 시점에 시작',
   },
 ]
 

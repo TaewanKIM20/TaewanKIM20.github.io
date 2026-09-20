@@ -3,9 +3,9 @@ import './Skills.css'
 
 const Skills = () => (
   <section className='skills section-shell' id='skills' aria-labelledby='skills-title'>
-    <div className='section-heading section-heading--split'>
+    <div className='section-heading'>
       <div>
-        <p className='section-index'>03 / CAPABILITIES</p>
+        <p className='section-index'>CAPABILITIES</p>
         <h2 id='skills-title'>기술과 역량</h2>
       </div>
       <p>프로젝트에서 실제로 설계·구현·운영한 기술을 역할별로 정리했습니다.</p>

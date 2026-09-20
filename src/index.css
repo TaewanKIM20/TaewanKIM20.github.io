@@ -16,6 +16,10 @@ html {
 body {
   min-width: 320px;
   margin: 0;
+  overflow-wrap: anywhere;
+  word-break: keep-all;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple SD Gothic Neo',
+    'Malgun Gothic', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -33,6 +37,12 @@ a {
 button {
   border: 0;
   cursor: pointer;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
 }
 
 ul {
